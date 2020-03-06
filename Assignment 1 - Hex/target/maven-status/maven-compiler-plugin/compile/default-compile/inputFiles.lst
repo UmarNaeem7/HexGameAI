@@ -3,9 +3,9 @@ D:\source\Java\Assignment 1 - Hex\src\main\java\AiHex\hexBoards\ScoreBoard.java
 D:\source\Java\Assignment 1 - Hex\src\main\java\AiHex\hexBoards\GameBoard.java
 D:\source\Java\Assignment 1 - Hex\src\main\java\AiHex\hexBoards\OpenBoard.java
 D:\source\Java\Assignment 1 - Hex\src\main\java\AiHex\hexBoards\BoardData.java
+D:\source\Java\Assignment 1 - Hex\src\main\java\AiHex\players\ArtificiallyIntelligentPlayer.java
 D:\source\Java\Assignment 1 - Hex\src\main\java\AiHex\players\Player.java
 D:\source\Java\Assignment 1 - Hex\src\main\java\AiHex\gameMechanics\Move.java
-D:\source\Java\Assignment 1 - Hex\src\main\java\AiHex\gameMechanics\HexGame.java
 D:\source\Java\Assignment 1 - Hex\src\main\java\AiHex\gameMechanics\InvalidMoveException.java
 D:\source\Java\Assignment 1 - Hex\src\main\java\AiHex\graphical\BoardSetupPanel.java
 D:\source\Java\Assignment 1 - Hex\src\main\java\AiHex\gameMechanics\SeasonMechanics.java

@@ -6,6 +6,7 @@ import AiHex.players.Player;
 import AiHex.players.PointAndClickPlayer;
 import AiHex.hexBoards.GameBoard;
 import AiHex.hexBoards.Board;
+import AiHex.players.RandomPlayer;
 
 public class GameRunner extends Thread implements Runner {
 
@@ -108,6 +109,9 @@ public class GameRunner extends Thread implements Runner {
     switch (type) {
       case Player.CLICK_PLAYER:
         player = new PointAndClickPlayer(this, colour);
+        break;
+      case Player.RAND_PLAYER:
+        player = new RandomPlayer(this, colour);
         break;
       default:
         System.out.println("ERROR - no player or exception");
