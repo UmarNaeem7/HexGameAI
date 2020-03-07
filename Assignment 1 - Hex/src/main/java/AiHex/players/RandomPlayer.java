@@ -40,13 +40,16 @@ public class RandomPlayer implements Player{
                 //randomNum = minimum + rand.nextInt((maximum - minimum) + 1);
                 boolean flag = false;
                 int random_x = 0, random_y = 0;
+                //System.out.println("Size = " + game.getBoard().getSize());
                 while (!flag){
                 random_x = r.nextInt(((game.getBoard().getSize()-1)-0)+1)+0;
                 random_y = r.nextInt(((game.getBoard().getSize()-1)-0)+1)+0;
                 if (game.getBoard().get(random_x, random_y) != Board.RED && 
-                        game.getBoard().get(random_y, random_y) != Board.BLUE)
+                        game.getBoard().get(random_x, random_y) != Board.BLUE)
                             flag = true;
                 }
+                //System.out.println("x = " + random_x);
+                //System.out.println("y = " + random_y);
                 Move move = new Move(colour, random_x, random_y);
 
 		game.getBoard().setSelected(null);
