@@ -26,6 +26,7 @@ public class BoardData {
     initAdjMatrix();
   }
 
+
   public AdjMatrix getAdjMatrix(int colour) {
     AdjMatrix returnVal;
     switch (colour) {

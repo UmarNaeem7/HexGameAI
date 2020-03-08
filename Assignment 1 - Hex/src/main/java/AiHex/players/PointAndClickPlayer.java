@@ -20,7 +20,7 @@ public class PointAndClickPlayer implements Player {
   public Move getMove() {
 		switch (colour) {
 		case Board.RED:
-			System.out.print("Red move: ");
+			System.out.println("Red move: ");
 			break;
 		case Board.BLUE:
 			System.out.print("Blue move: ");

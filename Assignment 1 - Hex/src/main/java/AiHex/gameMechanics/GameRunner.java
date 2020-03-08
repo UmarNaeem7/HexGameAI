@@ -21,8 +21,8 @@ public class GameRunner extends Thread implements Runner {
 
   public GameRunner(int size, int redPlayer, String[] redArgs, int bluePlayer, String[] blueArgs) {
     this.board = new GameBoard(size);
-    this.red = createPlayer(redPlayer, Board.RED, redArgs);
-    this.blue = createPlayer(bluePlayer, Board.BLUE, blueArgs);
+    this.red = createPlayer(Player.CLICK_PLAYER, Board.RED, redArgs);
+    this.blue = createPlayer(Player.RAND_PLAYER, Board.BLUE, blueArgs);
   }
 
   public GameBoard getBoard() {

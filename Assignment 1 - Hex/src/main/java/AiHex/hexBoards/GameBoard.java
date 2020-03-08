@@ -10,7 +10,7 @@ public class GameBoard extends AbstractBoard{
 	protected BoardData data;
 
 	public GameBoard(int size) {
-    this.name = "Game";
+    	this.name = "Game";
 		this.data = new BoardData(size);
 		this.size = size;
 	}
@@ -20,6 +20,23 @@ public class GameBoard extends AbstractBoard{
 		this.data = data;
 	}
 
+	public GameBoard(GameBoard g) {
+		this.size = g.getSize();
+		this.data = g.getData();
+	}
+
+	public GameBoard nextState(GameBoard b, Move move) {
+		GameBoard gameBoard = new GameBoard(b.getSize(), b.getData());
+		try{
+			gameBoard.makeMove(move);
+		}
+		catch(InvalidMoveException e) {
+			System.out.println("Invalid Move");
+		}
+
+		return gameBoard;
+	}
+
 	public boolean makeMove(Move move) throws InvalidMoveException {
 
     	boolean moveAccepted = false;
@@ -27,27 +44,45 @@ public class GameBoard extends AbstractBoard{
 		int y = move.getY();
 		int colour = move.getColour();
 		if (x < 0 || x > size-1 || y < 0 ||y > size-1) {
-     Toolkit.getDefaultToolkit().beep();
+     		Toolkit.getDefaultToolkit().beep();
 			throw new InvalidMoveException(
 					"Coordinates outside the play area!", move,
 					InvalidMoveException.OUTSIDE_BOARD);
 		} else if (data.get(move.getX(), move.getY()).getValue() == Board.BLANK ) {
 			data.set(move.getX(), move.getY(), colour);
-      moveAccepted = true;
-      changeOccured = true;
+			moveAccepted = true;
+			changeOccured = true;
 		} else {
-      Toolkit.getDefaultToolkit().beep();
+      		Toolkit.getDefaultToolkit().beep();
 			throw new InvalidMoveException("That hex is not blank!", move,
 					InvalidMoveException.ALREADY_TAKEN);
 		}
 		return moveAccepted;
 	}
 
-  public boolean checkwin(int player){
-    return this.data.checkWin(player);
-  }
+	public String[] getEmptySlots() {
+		int emptySlots = 0;
+		String[] emptySlotCoOrdinates = new String[size*size];
 
-  @Override
+		for(int i = 0; i < this.size; i++) {
+			for(int  j = 0; j < this.size; j++) {
+				if (data.get(i, j).getValue() == Board.BLANK ) {
+					char x = (char)(i+'0');
+					char y = (char)(j+'0');
+					emptySlotCoOrdinates[1 + emptySlots++] = String.valueOf(x) + String.valueOf(y);
+				}
+			}
+		}
+		emptySlotCoOrdinates[0] = String.valueOf(emptySlots);
+		return emptySlotCoOrdinates;
+	}
+
+  	public boolean checkwin(int player){
+    	return this.data.checkWin(player);
+  	}
+
+
+  	@Override
 	public int get(int x, int y) {
 		return data.get(x, y).getValue();
 	}
@@ -65,10 +100,18 @@ public class GameBoard extends AbstractBoard{
 	}
 
 
-  @Override
-  public String getName() {
-    return name;
-  }
+  	@Override
+	public String getName() {
+		return name;
+	}
+
+	public int getSize() {
+		return this.size;
+	}
+
+	public BoardData getData() {
+		return this.data;
+	}
 
   @Override
   public void setName(String name) {
