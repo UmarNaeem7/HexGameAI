@@ -2,6 +2,8 @@ package AiHex.gameMechanics;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import AiHex.players.AlphaBetaPlayer;
 import AiHex.players.Player;
 import AiHex.players.PointAndClickPlayer;
 import AiHex.hexBoards.GameBoard;

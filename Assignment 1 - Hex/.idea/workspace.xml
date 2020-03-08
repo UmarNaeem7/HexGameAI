@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9db470ea-aa35-4545-8f98-ab9df787b907" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9db470ea-aa35-4545-8f98-ab9df787b907" name="Default Changelist" comment="minimax added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AiHex/players/AlphaBetaPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AiHex/gameMechanics/GameRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AiHex/gameMechanics/GameRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AiHex/hexBoards/BoardData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AiHex/hexBoards/BoardData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AiHex/hexBoards/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AiHex/hexBoards/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AiHex/players/PointAndClickPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AiHex/players/PointAndClickPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AiHex/players/RandomPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AiHex/players/RandomPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/AiHex/gameMechanics/GameRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AiHex/gameMechanics/GameRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AiHex/gameMechanics/HexGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AiHex/gameMechanics/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AiHex/gameMechanics/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AiHex/graphical/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AiHex/graphical/GUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AiHex/graphical/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AiHex/graphical/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AiHex/graphical/PlayerChoicePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AiHex/graphical/PlayerChoicePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AiHex/graphical/boardPanels/HexGroupPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AiHex/graphical/boardPanels/HexGroupPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AiHex/hexBoards/BoardData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AiHex/hexBoards/BoardData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AiHex/hexBoards/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AiHex/hexBoards/GameBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AiHex/players/AbstractPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AiHex/players/AbstractPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AiHex/players/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AiHex/players/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AiHex/players/PointAndClickPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AiHex/players/PointAndClickPlayer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/AiHex/players/RandomPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AiHex/players/RandomPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/seasonal-hex-game.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +15,13 @@
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="17" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -115,6 +105,14 @@
       <workItem from="1579262843343" duration="4355000" />
       <workItem from="1579273468918" duration="1285000" />
     </task>
+    <task id="LOCAL-00001" summary="minimax added">
+      <created>1583679717950</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583679717950</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,34 +131,38 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="minimax added" />
+    <option name="LAST_COMMIT_MESSAGE" value="minimax added" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1583679704070">
+    <state x="478" y="0" key="CommitChangelistDialog2" timestamp="1583684121844">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583679704070" />
-    <state width="746" height="192" key="GridCell.Tab.0.bottom" timestamp="1583679704116">
+    <state x="478" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583684121844" />
+    <state width="670" height="187" key="GridCell.Tab.0.bottom" timestamp="1583684055271">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583679704116" />
-    <state width="746" height="192" key="GridCell.Tab.0.center" timestamp="1583679704116">
+    <state width="670" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583684055271" />
+    <state width="670" height="187" key="GridCell.Tab.0.center" timestamp="1583684055271">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583679704116" />
-    <state width="746" height="192" key="GridCell.Tab.0.left" timestamp="1583679704116">
+    <state width="670" height="187" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583684055271" />
+    <state width="670" height="187" key="GridCell.Tab.0.left" timestamp="1583684055271">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583679704116" />
-    <state width="746" height="192" key="GridCell.Tab.0.right" timestamp="1583679704116">
+    <state width="670" height="187" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583684055271" />
+    <state width="670" height="187" key="GridCell.Tab.0.right" timestamp="1583684055271">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583679704116" />
+    <state width="670" height="187" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583684055271" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583679674354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1583679674354" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/seasonal_hex_game$GUI__1_.ic" NAME="GUI (1) Coverage Results" MODIFIED="1583679495476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/seasonal_hex_game$GUI__1_.ic" NAME="GUI (1) Coverage Results" MODIFIED="1583684055213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>AiHex.graphical.*</FILTER>
     </SUITE>
   </component>
